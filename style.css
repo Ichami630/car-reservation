@@ -129,7 +129,7 @@ button[type="submit"]:hover{
 
 /* customer service  style start */
 #customerService{
-    margin: 10px 8px;
+    margin: 10px 34px;
     text-align: center;
 }
 #customerService h2{
@@ -146,6 +146,42 @@ button[type="submit"]:hover{
     height: 4px;
     background: rgb(236, 236, 15);
 }
+.thoughts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 12px;
+}
+.box{
+    padding: 8px;
+    background: rgb(238, 232, 232);
+    box-shadow: 4px 3px #d8cece;
+}
+.box-flex{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.plus{
+    padding: 10px 12px;
+    background: rgb(236, 236, 15);
+    color: #fff;
+    margin-right: 10px;
+}
+.box h4{
+    color: rgb(87, 84, 84);
+    font-weight: bolder;
+    font-size: 32px;
+}
+.box p{
+    margin-top: 0px;
+    color: rgb(84, 86, 87);
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+/* customer service  style end */
+
 footer{
     grid-column: 1/13;
     margin: 4px;
@@ -202,6 +238,12 @@ footer p{
     }
     .hero-text h2{
         font-size: 28px;
+    }
+    .thoughts{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box h4{
+        font-size: 24px;
     }
 }
 
