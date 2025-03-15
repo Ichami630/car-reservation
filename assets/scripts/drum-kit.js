@@ -2,14 +2,17 @@
 const drums = document.querySelectorAll(".drum")
 
 for(let i=0;i<drums.length;i++){
+    //playsound on button click
     drums[i].addEventListener("click",function(){
         const text = this.innerHTML
         playSound(text)
+        animateButton(text)
     })
 
     //play sound on keypress
     drums[i].addEventListener("keypress",function(e){
         playSound(e.key)
+        animateButton(e.key)
     })
 }
 
@@ -45,5 +48,17 @@ function playSound(key){
             const bass = new Audio("../assets/sounds/kick-bass.mp3")
             bass.play()
             break;
+        default:
+            console.log("invalid")
+            break;
     }
+}
+
+//animate the pressed/clicked button
+function animateButton(key){
+    const activeButton = document.querySelector("."+key)
+    activeButton.classList.add("pressed")
+    setTimeout(()=>{
+        activeButton.classList.remove("pressed")
+    },1000)
 }
