@@ -511,26 +511,26 @@ h1, h2{
   
   
   .i {
-    background-image: url("/assets/images/tom1.png");
+    background-image: url("./assets/images/tom1.png");
   
   }
   
   .c {
-    background-image: url("/assets/images/tom2.png");
+    background-image: url("./assets/images/tom2.png");
   
   }
   
   .h {
-    background-image: url("/assets/images/tom3.png");
+    background-image: url("./assets/images/tom3.png");
   }
   
   .a {
-    background-image: url("/assets/images/tom4.png");
+    background-image: url("./assets/images/tom4.png");
   
   }
   
   .m {
-    background-image: url("/assets/images/crash.png");
+    background-image: url("./assets/images/crash.png");
   
   }
   
@@ -540,7 +540,7 @@ h1, h2{
   }
   
   .b {
-    background-image: url("/assets/images/snare.png");
+    background-image: url("./assets/images/snare.png");
   
   }
   
