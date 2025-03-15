@@ -7,13 +7,13 @@ for(let i=0;i<drums.length;i++){
         const text = this.innerHTML
         playSound(text)
         animateButton(text)
-    })
+    });
 
     //play sound on keypress
     drums[i].addEventListener("keypress",function(e){
         playSound(e.key)
         animateButton(e.key)
-    })
+    });
 }
 
 //playsound function
@@ -60,5 +60,5 @@ function animateButton(key){
     activeButton.classList.add("pressed")
     setTimeout(()=>{
         activeButton.classList.remove("pressed")
-    },1000)
+    },100)
 }
