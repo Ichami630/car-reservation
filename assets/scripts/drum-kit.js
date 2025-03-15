@@ -1,1 +1,49 @@
-console.log("connecting")
+//get all the drums
+const drums = document.querySelectorAll(".drum")
+
+for(let i=0;i<drums.length;i++){
+    drums[i].addEventListener("click",function(){
+        const text = this.innerHTML
+        playSound(text)
+    })
+
+    //play sound on keypress
+    drums[i].addEventListener("keypress",function(e){
+        playSound(e.key)
+    })
+}
+
+//playsound function
+function playSound(key){
+    switch(key){
+        case "i":
+            const tom1 = new Audio("../assets/sounds/tom-1.mp3")
+            tom1.play()
+            break;
+        
+        case "c":
+            const tom2 = new Audio("../assets/sounds/tom-2.mp3")
+            tom2.play()
+            break;
+        case "h":
+            const tom3 = new Audio("../assets/sounds/tom-3.mp3")
+            tom3.play()
+            break;
+        case "a":
+            const tom4 = new Audio("../assets/sounds/tom-4.mp3")
+            tom4.play()
+            break;
+        case "m":
+            const crash = new Audio("../assets/sounds/crash.mp3")
+            crash.play()
+            break;
+        case "b":
+            const snare = new Audio("../assets/sounds/snare.mp3")
+            snare.play()
+            break;
+        case "r":
+            const bass = new Audio("../assets/sounds/kick-bass.mp3")
+            bass.play()
+            break;
+    }
+}
