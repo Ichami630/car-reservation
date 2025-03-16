@@ -382,9 +382,14 @@ footer p{
         flex-direction: column;
     }
 
-    /*whack a mole*/
+}
+@media (max-width:575px){
     .whack-content h1{
-        font-size: 32px;
+        font-size: 32px !important;
+        text-align: center !important;
+    }
+    .whack-holes{
+        grid-template-columns: repeat(2,1fr) !important;
     }
 }
 
@@ -501,6 +506,7 @@ h1, h2{
 
 /*drum-kit page*/
 .drum-kit{
+    margin: 10px;
     margin-top: 120px;
     text-align: center;
     padding-bottom: 40px;
@@ -588,6 +594,7 @@ h1, h2{
   /*whack a mole */
   .whack{
     margin: 10px;
+    margin-top: 120px;
 }
 .whack-bg{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, 

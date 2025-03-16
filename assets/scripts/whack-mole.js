@@ -35,7 +35,7 @@ volume.addEventListener("click",()=>{
 
 //utility to play sound
 function playSound(audio){
-    const sound = new Audio("./sounds/"+audio)
+    const sound = new Audio("../assets/sounds/"+audio)
     isSound ? sound.play():''
 }
 
